@@ -7,6 +7,7 @@ A take-home-challenge with New Exceed Group
 > * JavaScript
 > * Bootstrap
 > * jQuery
+> * React
 
 ## Live preview
 

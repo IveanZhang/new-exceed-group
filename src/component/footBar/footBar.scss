@@ -1,0 +1,91 @@
+footer {
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0,0,0,.1);
+}
+
+#contact-left h3, #contact-right h3 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#contact-left p{
+    color:#fff;
+    margin-bottom: 30px;
+}
+
+#contact-info {
+    background-image: url('./img/world-map.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+address{
+    color: #fff;
+}
+
+address strong {
+    font-size: 16px;
+}
+
+address strong, #phone-fax-email strong{
+    letter-spacing: 1px;
+}
+
+.contact-qr img{
+    width: 200px;
+    height: 200px;
+    margin: 30px 10px;
+}
+
+#footer-bottom {
+    background-color: rgba(0,0,0,.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer-menu {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+}
+
+#footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#footer-menu ul li {
+    display: inline-block;
+}
+
+#footer-menu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#footer-menu a:hover{
+    color:#ffad33;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #footer-copyrights{
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px){
+    #footer-copyrights{
+        text-align: center;
+    }
+}

@@ -1,0 +1,135 @@
+html,
+body {
+    height: 100%; 
+}
+
+body {
+    font-family: "Microsoft Yahei", sans-serif;
+}
+
+p {
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h3 {
+    color: #64707b;
+    text-transform: uppercase;
+}
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#root{
+    height: 100%;
+}
+
+/*=========================================================
+                      BOTTUNS (Generic)
+===========================================================*/
+.btn-general {
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover,
+btn-white:focus {
+    background-color: #fff;
+    color: #41464b;
+}
+
+.btn-blue {
+    border-color: #ffad33;
+    color: #ffad33;
+}
+
+.btn-blue:hover,
+btn-blue:focus {
+    background-color: #ffad33;
+    color: #fff;
+}
+
+.btn-back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 3px 15px;
+    border-radius: 0;
+    display: none;
+}
+
+/*=========================================================
+                      ANIMATE (Generic)
+===========================================================*/
+.page-container{
+    height: 100%;
+}
+
+#home-cover,
+home-heading,
+home-btn {
+    animation-duration: .5s;
+}
+
+#home-cover {
+    animation-delay: .1s;
+}
+
+#home-heading {
+    animation-delay: .5s;
+}
+
+#home-btn {
+    animation-delay: 1s;
+}
+
+/*=========================================================
+                      CONTENT (Generic)
+===========================================================*/
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.content-title-white h3{
+    color: #fff;
+}
+
+.content-title-white h4{
+    color: #fff;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #ffad33;
+    margin: 0 auto 30px auto;
+}
+
+@media (max-width: 767px){
+    .btn-general {
+        padding: 6px 22px 6px 22px;
+        font-size: 14px;
+    }
+}

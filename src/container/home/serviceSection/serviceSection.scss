@@ -1,0 +1,44 @@
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+}
+
+.service-item-icon i {
+    color: #ffad33;
+    float: left;
+    padding: 15px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.service-item:hover .service-item-icon i {
+    color: #fff;
+    background-color: #ffad33;
+}
+
+.service-item-title h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 10px 20px;
+}
+
+.service-item-desc p {
+    margin: 0;
+    padding-left: 60px;
+}
+
+@media (max-width: 320px){
+    .service-item-icon i {
+        width: 58px;
+        height: 58px;
+        padding: 7px;
+    }
+    
+    .service-item-title h3 {
+        font-size: 17px;
+    }
+}

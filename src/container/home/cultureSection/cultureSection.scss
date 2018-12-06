@@ -1,0 +1,103 @@
+#cultures-cover{
+    background-color: #333333;
+}
+
+#cultures .content-box{
+    background-color: rgba(0,0,0,.1)
+}
+
+#customers-cultures{
+    padding: 50px 0;
+}
+
+.culture img{
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+.culture blockquote {
+    border: 0;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    color: #fff;
+    padding: 30px 150px;
+    position: relative;
+}
+
+.culture blockquote p {
+    color: #fff;
+}
+
+.culture blockquote h3 {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: STXingkai, sans-serif;
+    font-style: normal;
+    color: #e82727;
+}
+
+.culture blockquote::before, .culture blockquote::after{
+    font-size: 80px;
+    font-style: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.culture blockquote::before{
+    content: "\201C";
+    top: 0;
+    left: 100px;
+}
+
+.culture blockquote::after{
+    content: "\201D";
+    bottom: 0;
+    right: 100px;
+}
+
+.culture-author p{
+    color: #fff;
+    font-size: 17px;
+}
+
+.culture-author p strong{
+    display: block;
+}
+
+@media (max-width: 767px){
+    .culture blockquote {
+        padding: 6px 50px;
+    }
+    
+    .culture blockquote:before{
+        left: 10px;
+    }
+    
+    .culture blockquote:after{
+        right: 10px;
+    }
+    
+    .culture blockquote p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px){
+    .culture img{
+        max-width: 80px;
+    }
+    
+    .culture blockquote {
+        padding: 6px 30px;
+    }
+    
+    .culture blockquote:before{
+        left: 7px;
+    }
+    
+    .culture blockquote:after{
+        right: 7px;
+    }
+}
