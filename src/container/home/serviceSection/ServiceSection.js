@@ -11,7 +11,7 @@ class ServiceSection extends Component {
                     <div className="service-item">
                         <div className="service-item-icon">
                             <a href={`${item.url}`} target='_blank' rel="noopener noreferrer">
-                                <i className="fas fa-building fa-3x"></i>
+                                <i className={`fas fa-${item.icon} fa-3x`}></i>
                             </a>
                         </div>
                         <div className="service-item-title">
