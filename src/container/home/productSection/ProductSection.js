@@ -16,8 +16,8 @@ class ProductSection extends Component {
                         </div>
                         <ul className="product-spec">
                             {
-                                item.content.map(info=>{
-                                    return (<li><p>{info}</p></li>)
+                                item.content.map((info, _index)=>{
+                                    return (<li key={_index}><p>{info}</p></li>)
                                 })
                             }
                         </ul>
