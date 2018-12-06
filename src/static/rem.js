@@ -7,6 +7,5 @@
     }
 
     setRemUint();
-
     window.addEventListener('resize', setRemUint);
 })();

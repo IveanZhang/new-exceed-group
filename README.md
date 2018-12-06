@@ -8,7 +8,5 @@ A take-home-challenge with New Exceed Group
 > * Bootstrap
 > * jQuery
 > * React
+> * Redux
 
-## Live preview
-
-https://iveanzhang.github.io/new-exceed-group/

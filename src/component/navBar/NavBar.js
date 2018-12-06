@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 import './navbar.scss';
 
 class NavBar extends Component {
+
+    renderNavList(){
+        const navList = this.props.navList;
+        return navList.map(item => {
+            return (<li key={item.key}><a className="smooth-scroll" href={`#${item.value}`}>{item.value}</a></li>)
+        })
+    }
+
     render() {
         return (
             <header>
@@ -25,14 +34,7 @@ class NavBar extends Component {
 
                             <div id="vesco-menu" className="collapse navbar-collapse">
                                 <ul className="nav navbar-nav">
-                                    <li><a className="smooth-scroll" href="#home">首页</a></li>
-                                    <li><a className="smooth-scroll" href="#service">四大领域</a></li>
-                                    <li><a className="smooth-scroll" href="#about">新超越介绍</a></li>
-                                    <li><a className="smooth-scroll" href="#work">产品展示</a></li>
-                                    <li><a className="smooth-scroll" href="#product">两大产业</a></li>
-                                    <li><a className="smooth-scroll" href="#cultures">公司文化</a></li>
-                                    <li><a className="smooth-scroll" href="#history">公司大事记</a></li>
-                                    <li><a className="smooth-scroll" href="#contact">联系我们</a></li>
+                                    {this.renderNavList()}
                                 </ul>
                             </div>
                         </div>
@@ -43,4 +45,6 @@ class NavBar extends Component {
     }
 }
 
-export default NavBar;
+export default connect(
+    state => ({ navList: state.navBarReducer.navList})
+)(NavBar);
