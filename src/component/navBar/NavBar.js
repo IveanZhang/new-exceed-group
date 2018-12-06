@@ -7,7 +7,7 @@ class NavBar extends Component {
     renderNavList(){
         const navList = this.props.navList;
         return navList.map(item => {
-            return (<li key={item.key}><a className="smooth-scroll" href={`#${item.value}`}>{item.value}</a></li>)
+            return (<li key={item.key}><a className="smooth-scroll" href={`#${item.key}`}>{item.value}</a></li>)
         })
     }
 

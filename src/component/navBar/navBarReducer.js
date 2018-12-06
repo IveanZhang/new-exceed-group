@@ -32,7 +32,7 @@ const initState = {
         },
         {
             key: NAVKEY.contact,
-            value: '联系忘我们'
+            value: '联系我们'
         }
     ]
 };
