@@ -5,9 +5,9 @@ import './serviceSection.scss';
 class ServiceSection extends Component {
     renderContent() {
         const contentList = this.props.contentList;
-        return contentList.map(item => {
+        return contentList.map( (item, index) => {
             return (
-                <div className="col-sm-6">
+                <div key={index} className="col-sm-6">
                     <div className="service-item">
                         <div className="service-item-icon">
                             <a href={`${item.url}`} target='_blank' rel="noopener noreferrer">
